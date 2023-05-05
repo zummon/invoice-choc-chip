@@ -1,4 +1,4 @@
-import "./tailwind.css";
+import "./style.css";
 import App from "./App.svelte";
 
 let data = {
