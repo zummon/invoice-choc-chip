@@ -12,7 +12,6 @@
 	  }
 	  return `${q.currency} ${number.toLocaleString(undefined, {
 	    minimumFractionDigits: 2,
-	    maximumFractionDigits: 2
 	  })}`;
 	};
 	const qty = number => {
@@ -20,7 +19,9 @@
 	  if (number === 0 || isNaN(number)) {
 	    return "";
 	  }
-	  return number;
+	  return number.toLocaleString(undefined, {
+	    minimumFractionDigits: 0,
+	  });
 	};
 	const rate = rate => {
 	  rate = Number(rate) * 100;
@@ -90,14 +91,14 @@
 {#each Object.keys(data) as lng, i (`lang-${i}`)}
 		<button class="block duration-300 py-1 px-2 rounded {q.lang === lng ? "bg-yellow-800 text-white" : "text-yellow-800 bg-yellow-300 hover:bg-yellow-500 focus:bg-yellow-500"}" on:click={() => {
 			q.lang = lng
-			}}>
-			{lng =='th' ? 'ไทย' : 'Eng'}
+		}}>
+			{data[lng]['']}
 		</button>
 	{/each}
 	{#each Object.keys(data[q.lang].label) as dc, i (`doc-${i}`)}
 		<button class="block duration-300 py-1 px-2 rounded {q.doc === dc ? "bg-yellow-800 text-white" : "text-yellow-800 bg-yellow-300 hover:bg-yellow-500 focus:bg-yellow-500"}" on:click={() => {
 			q.doc = dc
-			}}>
+		}}>
 			{data[q.lang].label[dc].title}
 		</button>
 	{/each}

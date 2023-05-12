@@ -3,6 +3,7 @@ import App from "./App.svelte";
 
 let data = {
   "": {
+    "": "English",
     "font-link":
       "https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap",
     "font-style": "font-family: 'Patrick Hand', cursive;",
@@ -71,6 +72,7 @@ let data = {
     },
   },
   th: {
+    "": "ภาษาไทย",
     "font-link": "https://fonts.googleapis.com/css2?family=Itim&display=swap",
     "font-style": "font-family: 'Itim', cursive;",
     label: {
