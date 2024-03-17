@@ -1,3 +1,1 @@
-### [Codesandbox](https://codesandbox.io/p/github/zummon/invoice-choc-chip-svelte)
-
-Something breaks, needs upgrade. Let me know.
+https://invoice-choc-chip.netlify.app/

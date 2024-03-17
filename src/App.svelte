@@ -318,7 +318,7 @@
 		<span class="">Currency</span>
 		<input class="border border-yellow-800 w-12" bind:value={q.currency} />
 	</label>
-	<button class="block duration-300 py-1 px-2 rounded text-yellow-800 bg-yellow-300 hover:bg-yellow-800 hover:text-white focus:bg-yellow-800 focus:text-white" on:click={() => {window.print()}}>
+	<button class="block duration-300 py-1 px-2 rounded text-yellow-800 bg-yellow-300 hover:bg-yellow-800 hover:text-white focus:bg-yellow-800 focus:text-white" onclick="print()">
 		Print
 	</button>
 </div>
